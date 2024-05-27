@@ -225,16 +225,20 @@ ul {
 .zf-tempContDiv textarea:hover {
 	border: 1px solid rgba(157, 157, 157, 0.75) !important;
 } */
-
-.zf-tempContDiv input[type="text"]:focus,
-.zf-tempContDiv input[type="number"]:focus,
-.zf-tempContDiv textarea:focus {
-	border: 2px solid #fbb040 !important;
-	-webkit-box-shadow: 0 0 5px #fbb040 !important;
-	-moz-box-shadow: 0 0 5px #fbb040 !important;
-	box-shadow: 0 0 5px transparent !important;
+input[type="text"].error {
+    border: 2px solid #ee6c4d !important;
 }
-
+ input[type="text"]:focus,
+ input[type="number"]:focus,
+ textarea:focus {
+	border: 2px solid #fbb040;
+	-webkit-box-shadow: 0 0 5px #fbb040;
+	-moz-box-shadow: 0 0 5px #fbb040;
+	box-shadow: 0 0 5px transparent;
+}
+input[type="text"].error:focus {
+    border: 2px solid #ee6c4d !important;
+}
 .zf-tempContDiv textarea {
 	height: 75px;
 }
@@ -345,7 +349,9 @@ ul {
 	background-color: #f5f8fa;
 	color: #000000;
 	outline: none;
+	appearance: none;
 }
+
 
 .zf-form-sBox:focus {
 	border: 2px solid #fbb040 !important;

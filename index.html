@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SouthSmoke.com&#x20;-&#x20;Support&#x20;Ticket</title>
     <link href="css/form.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Raleway:ital,wght@0,100..900;1,100..900">
     <script src="js/validation.js"></script>
 </head>
 
@@ -120,7 +121,7 @@
                                 <em class="zf-important">*</em>
                             </label>
                             <div class="zf-tempContDiv">
-                                <select class="zf-form-sBox" name="Dropdown" checktype="c1">
+                                <select class="zf-form-sBox" name="Dropdown" checktype="c1" >
                                     <option selected="true" value="Select" disabled>Please Select</option>
                                     <optgroup label="Account Issue">
                                     <option value="Update&#x20;Account&#x20;Information">Update&#x20;Account&#x20;Information</option>
@@ -244,6 +245,25 @@
             }, 5000);
         });
     </script>
-</body>
+    <script>
+        document.getElementById('zf-submitColor').addEventListener('click', function(event) {
+    var inputs = document.querySelectorAll('input, select, textarea');
+    var isValid = true;
 
+    inputs.forEach(function(input) {
+        if (!input.value.trim()) {
+            input.classList.add('error');
+            isValid = false;
+        } else {
+            input.classList.remove('error');
+        }
+    });
+
+    if (!isValid) {
+        event.preventDefault();
+    }
+});
+
+    </script>
+</body>
 </html>
