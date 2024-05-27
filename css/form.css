@@ -349,7 +349,6 @@ input[type="text"].error:focus {
 	background-color: #f5f8fa;
 	color: #000000;
 	outline: none;
-	appearance: none;
 }
 
 
