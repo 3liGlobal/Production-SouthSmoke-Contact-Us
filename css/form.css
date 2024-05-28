@@ -357,6 +357,7 @@ select.zf-form-sBox {
     -webkit-appearance: none !important;
     appearance: none !important;
     padding-right: 1rem !important;
+	background-color: #f5f8fa;
 }
 
 .zf-form-sBox:focus {
