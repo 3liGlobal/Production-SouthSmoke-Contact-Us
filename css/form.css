@@ -350,7 +350,14 @@ input[type="text"].error:focus {
 	color: #000000;
 	outline: none;
 }
-
+select.zf-form-sBox {
+    background: url("data:image/svg+xml,%3Csvg height='15px' width='15px' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.50098 12L0.00578693 0.749999L12.9962 0.75L6.50098 12Z' fill='black'/%3E%3C/svg%3E%0A") no-repeat;
+    background-position: calc(100% - 0.75rem) center !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    padding-right: 1rem !important;
+}
 
 .zf-form-sBox:focus {
 	border: 2px solid #fbb040 !important;
