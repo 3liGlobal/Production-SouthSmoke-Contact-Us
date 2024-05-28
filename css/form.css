@@ -336,9 +336,10 @@ input[type="text"].error:focus {
 }
 
 .zf-tempFrmWrapper .zf-labelName {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 12px;
 	color: #000000;
+	font-family: "Raleway", sans-serif !important;
 }
 
 .zf-form-sBox {
