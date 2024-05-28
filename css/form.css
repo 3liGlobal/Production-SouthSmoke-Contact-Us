@@ -358,6 +358,7 @@ select.zf-form-sBox {
     appearance: none !important;
     padding-right: 1rem !important;
 	background-color: #fff;
+	font-family: "Raleway", sans-serif;
 }
 
 .zf-form-sBox:focus {
